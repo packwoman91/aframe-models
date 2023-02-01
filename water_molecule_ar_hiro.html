@@ -1,0 +1,36 @@
+
+<!doctype HTML>
+<html>
+    <head>
+      <meta name="createdwith" content="https://niebert.githhub.io/JSON3D4Aframe">
+        <!--
+      <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+      <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+      -->
+      <script src="./js/aframe-v1.0.4.js"></script>
+      <script src="./js/aframe-ar.js"></script>
+    <title>
+            AR hiro Marker - Model 3D
+      </title>
+    </head>
+    <body style='margin : 0px; overflow: hidden;'>
+      <a-scene>
+          <a-marker id="mymarker" preset="hiro">
+
+<!-- Comment for SPHERE: Oxygen  -->
+<a-sphere id="902394093242" position="0.00 0.50 0.00" material="color: #3a88fe;opacity:1.5" rotation="0 0 0"  radius="0.90" ></a-sphere>
+
+<!-- Comment for SPHERE: Hydrogen 1 -->
+<a-sphere id="1510149323702" position="1.00 1.70 0.00" material="color: #ffffff;opacity:0.7" rotation="0 0 0"  radius="0.80" ></a-sphere>
+
+<!-- Comment for SPHERE: Hydrogen 2 -->
+<a-sphere id="1510235133212" position="-1.00 1.70 0.00" material="color: #ffffff;opacity:0.7" rotation="0 0 0"  radius="0.80" ></a-sphere>
+
+<!-- Comment for TEXT: Water Molecule -->
+<a-text id="1513093288575" position="0.00 0.50 1.50" material="color: #4545aa;opacity:0.5" rotation="0 0 0"  value="Water Molecule" color="#4545aa" height="1.00" ></a-text>
+
+          </a-marker>
+          <a-entity camera ></a-entity>
+      </a-scene>
+    </body>
+</html>
